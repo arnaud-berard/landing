@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.banner {
+    position: relative;
+    color: rgb(230, 230, 250);
+    padding: 130px 0px;
+    background: url(../../image/banner.webp) center/cover no-repeat;
+    text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.8);
+    font-family: 'Roboto', sans-serif;
+
+}
+
+
+.banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    z-index: -1;
+}
+
+.banner h1 {
+    font-size: 55px;
+    font-weight: 700;
+}
+
+.banner h2 {
+    font-size: 35px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.banner a {
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.9);
+}
+
+.banner h1:hover, .banner h2:hover, .banner a:hover {
+    color: rgb(250, 235, 215);
+    text-shadow: 4px 4px 2px rgba(0, 0, 0, 1);
+}
